@@ -6,9 +6,12 @@
 {% endblock %}
 
 {% block content %}
+  
+  
   <div class="container">
     <div class="row">
-      <h5 class="display-5">Login to JobBoard</h5>
+      <h5 class="display-5">Login to My JobBoard</h5>
+      <zero-login zlurl="https://login.lnpay.ca"></zero-login>
       <div class="text-danger font-weight-bold">
           {% for error in errors %}
             <li>{{error}}</li>
@@ -37,4 +40,5 @@
       </form>
     </div>
   </div>
+ 
   {% endblock %}
